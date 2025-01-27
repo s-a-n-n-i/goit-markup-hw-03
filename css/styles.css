@@ -10,6 +10,13 @@
     --footer-contact-color: rgba(255, 255, 255, 0.6);
     --portfolio-filter-button-color: #F5F4FA;
     --portfolio-filter-button-text-color: rgba(33, 33, 33, 1);
+    --background-section-team: #F5F4FA;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 body {
@@ -30,6 +37,10 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+img {
+    display: block;
 }
 
 /* header */
@@ -138,14 +149,15 @@ a {
 /* benefits */
 .benefits {
     display: flex;
+    padding: 94px 0;
 }
 
 .benefits-list {
     display: flex;
-    
 }
 
 .benefits-list-title {
+    margin-bottom: 10px;
     color: var(--primary-title-color);
     font-weight: 700;
     font-size: 14px;
@@ -162,6 +174,13 @@ a {
 }
 
 /* services & team */
+.services {
+    padding-bottom: 94px;
+}
+
+.services-title {
+    margin-bottom: 50px;
+}
 
 .title {
     color: var(--primary-title-color);
@@ -172,24 +191,44 @@ a {
 
 }
 
+.team {
+    background-color: var(--background-section-team);
+    padding: 94px 0;
+}
+
+.team-title {
+    margin-bottom: 50px;
+}
+
+.team-list-item {
+    background-color: var(--primary-white-color);
+    padding-bottom: 30px;
+}
+
 .team-list-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
     color: var(--primary-title-color);
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.03em;
     line-height: 1.19;
+    text-align: center;
 }
 
 .team-list-text {
+
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 
 /* footer */
 
 .footer {
     background-color: var(--background-dark-color);
+    padding: 60px 0;
 }
 
 .footer-contact,
@@ -203,6 +242,10 @@ a {
 
 .footer-contact {
     color: var(--footer-contact-color);
+}
+
+.address {
+    margin-top: 10px;
 }
 
 .address-text {
