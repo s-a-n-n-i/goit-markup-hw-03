@@ -1,0 +1,240 @@
+@import url('./reset.css');
+
+:root {
+    --primary-text-color: #757575;
+    --primary-title-color: #212121;
+    --primary-white-color: #FFFFFF;
+    --active-color: #2196F3;
+    --header-logo-color: #000000;
+    --background-dark-color: #2F303A;
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+    --portfolio-filter-button-color: #F5F4FA;
+    --portfolio-filter-button-text-color: rgba(33, 33, 33, 1);
+}
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+
+ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+/* logo */
+.header {
+    margin: 0 215px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    margin-left: 93px;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.part-logo {
+    color: var(--active-color);
+}
+
+.header-logo {
+    color: var(--header-logo-color);
+}
+
+.footer-logo {
+    color: var(--primary-white-color);
+}
+
+
+/* Navigation */
+
+.nav-link {
+    font-weight: 500;
+    color: var(--primary-title-color);
+    letter-spacing: 0.02em;
+}
+
+.nav-link:hover {
+    color: var(--active-color);
+} 
+
+.active {
+    color: var(--active-color);
+}
+
+
+.contact-link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;   
+}
+
+.contact-link:hover {
+    color: var(--active-color);
+}
+
+/* solution */
+
+.solution {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: var(--background-dark-color);
+}
+
+.solution-title {
+    text-align: center;
+    color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+}
+
+.solution-button {
+    width: 216px;
+    height: 50px;
+    margin-top: 30px;
+    color: var(--primary-white-color);
+    background-color: var(--active-color);  
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+/* benefits */
+.benefits {
+    display: flex;
+}
+
+.benefits-list {
+    display: flex;
+    
+}
+
+.benefits-list-title {
+    color: var(--primary-title-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.benefits-list-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* services & team */
+
+.title {
+    color: var(--primary-title-color);
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    text-align:  center;
+
+}
+
+.team-list-title {
+    color: var(--primary-title-color);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    line-height: 1.19;
+}
+
+.team-list-text {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--background-dark-color);
+}
+
+.footer-contact,
+.address-text {
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.footer-contact {
+    color: var(--footer-contact-color);
+}
+
+.address-text {
+    color: var(--primary-white-color);
+}
+
+/* Portfolio */
+
+.filter-button {
+    color: var(--portfolio-filter-button-text-color);
+    background-color: var(--portfolio-filter-button-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+}
+
+.filter-button:hover {
+    color: var(--primary-white-color);
+    background-color: var(--active-color);
+}
+
+.project-title {
+    color: var(--primary-title-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.project-text {
+    font-size: 16px;
+    line-height: 1.88;
+}
