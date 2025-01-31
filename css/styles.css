@@ -45,6 +45,13 @@ img {
     max-width: 100%;
 }
 
+/* buttons */
+.solution-button,
+.filter-button {
+    cursor: pointer;
+}
+
+
 /* header */
 /* logo */
 .header {
@@ -329,3 +336,4 @@ img {
     font-size: 16px;
     line-height: 1.88;
 }
+
