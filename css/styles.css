@@ -31,8 +31,6 @@ body {
 
 
 ul {
-    display: flex;
-    /* gap: 50px; */
     list-style: none;
 }
 
@@ -75,7 +73,12 @@ img {
 
 .nav-list,
 .contact-list {
+    display: flex;
     gap: 50px;
+}
+
+.contact-list {
+    align-items: center;
 }
 
 .nav-list {
@@ -106,8 +109,8 @@ img {
 
 .nav-link {
     font-weight: 500;
-    color: var(--primary-title-color);
     letter-spacing: 0.02em;
+    color: var(--primary-title-color);
 }
 
 .nav-link:hover {
@@ -118,10 +121,7 @@ img {
     color: var(--active-color);
 }
 
-.contact-list {
-    display: flex;
-    align-items: center;
-}
+
 
 .contact-link {
     color: var(--primary-text-color);
@@ -147,49 +147,50 @@ img {
 
 .solution-title {
     text-align: center;
-    color: var(--primary-white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: var(--primary-white-color);
     
 }
 
 .solution-button {
-    width: 216px;
+    width: 200px;
     height: 50px;
+
     margin-top: 30px;
-    color: var(--primary-white-color);
-    background-color: var(--active-color);  
+
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.06em;
+
+    color: var(--primary-white-color);
+    background-color: var(--active-color);  
+
     border: 1px solid transparent;
     border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px #00000026;
 }
 
 /* benefits */
 .benefits {
-    display: flex;
     padding: 94px 0;
-}
-
-.benefits-list {
     display: flex;
 }
 
 .benefits-list-title {
     margin-bottom: 10px;
-    color: var(--primary-title-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--primary-title-color);
 }
 
 .benefits-list-text {
@@ -207,7 +208,16 @@ img {
 .services-list,
 .team-list,
 .projects-list {
+    display: flex;
     gap: 30px;
+}
+
+.benefits-list {
+    display: flex;
+}
+
+.benefits-list-item {
+    margin-right: 30px;
 }
 
 .services-title {
@@ -220,12 +230,11 @@ img {
     font-size: 36px;
     letter-spacing: 0.03em;
     text-align:  center;
-
 }
 
 .team {
-    background-color: var(--background-section-team);
     padding: 94px 0;
+    background-color: var(--background-section-team);
 }
 
 .team-title {
@@ -233,23 +242,24 @@ img {
 }
 
 .team-list-item {
-    background-color: var(--primary-white-color);
     padding-bottom: 30px;
+    background-color: var(--primary-white-color);
 }
 
 .team-list-title {
     margin-top: 30px;
     margin-bottom: 10px;
-    color: var(--primary-title-color);
+
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.03em;
     line-height: 1.19;
     text-align: center;
+
+    color: var(--primary-title-color);
 }
 
 .team-list-text {
-
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.03em;
@@ -259,8 +269,8 @@ img {
 /* footer */
 
 .footer {
-    background-color: var(--background-dark-color);
     padding: 60px 0;
+    background-color: var(--background-dark-color);
 }
 
 .footer-contact,
@@ -288,8 +298,7 @@ img {
 
 .filter-button {
     padding: 4px 25px;
-    color: var(--portfolio-filter-button-text-color);
-    background-color: var(--portfolio-filter-button-color);
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -297,6 +306,9 @@ img {
     letter-spacing: 0.03em;
     border: 1px solid transparent;
     border-radius: 4px;
+
+    color: var(--portfolio-filter-button-text-color);
+    background-color: var(--portfolio-filter-button-color);
 }
 
 .filter-button:hover {
@@ -306,6 +318,7 @@ img {
 
 .filter-list {
     margin-bottom: 50px;
+    
     display: flex;
     justify-content: center;
     gap: 8px;
